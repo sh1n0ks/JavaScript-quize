@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+  rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+  crossorigin="anonymous">
+    <title>JavaScript-quiz</title>
+  </head>
+  <body>
+    <div class="tab" id="js-tab">
+      <div class="tab-nav">
+        <a href=""class="sukima tav-nav-item is-active" data-nav="0">クイズ</a>
+        <a href=""class="tav-nav-item" data-nav="1">解説</a>
+      </div>
+      <div class="tab-contents">
+        <!-- クイズ -->
+        <div class="tab-content-item" data-content="0">
+          <div class="container">
+            <div id="js-question" class="mt-3 alert alert-dark" role="alert">
+              A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+            <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="ms-1 btn btn-secondary">Secondary</button>
+            <button type="button" class="ms-1 btn btn-secondary">Secondary</button>
+            <button type="button" class="ms-1 btn btn-secondary">Secondary</button>
+            </div>
+          </div>
+        </div>
+        <!-- 解答 -->
+        <div class="tab-content-item" data-content="1">
+          <div class="accordion" id="js-fab">
+            <p class="accordion-triger">
+              ①次のうち、俳句の季語として認定されていないものはどれ？
+            </p>
+            <div class="accordion-contents">
+              （答え）B.チューブ<br>
+              逆を言えば、
+              他の３つは季語なんです。
+              たしかに、サザン＝夏など、
+              多くの人がイメージできますもんね。
+              ただ、桑田さんは夏より春の方が好き
+              って本気で言ってましたけどね(^_^;)
+            </div>
+            <p class="accordion-triger">
+              ②母の日に贈る花で有名な「カーネーション」。さて、黄色のカーネーションの花言葉は次のうちどれ？
+            </p>
+            <div class="accordion-contents">
+              (答え)D.軽蔑<br>
+              個人的にこれはかなり意外でした。
+              黄色のカーネーションってそんな意味があるんですね。
+              ちなみに、赤のカーネーションは「母の愛」、
+              ピンクは「感謝」という意味があるので、
+              贈るのであればそちらの色がオススメ。
+            </div>
+            <p class="accordion-triger">
+              ③日常的に「マジ？」って言葉がよく使われますが、その「マジ」という言葉は、一体いつからあったでしょう？
+            </p>
+            <div class="accordion-contents">
+              (答え)A.江戸時代<br>
+              今は若者言葉として定着していますが、
+              当時は歌舞伎の書物の中にも「まじ」という言葉が残っているので、
+              今よりも品のある言葉として使われていたと考えられます。
+              まあ当時は当時で、
+              若者が使うようなくだけた言葉が他にあったと思いますが。
+            </div>
+            <p class="accordion-triger">
+              ④次のうち、実際に北海道に存在する川はどれ？
+            </p>
+            <div class="accordion-contents">
+              (答え)C.ヤリキレナイ川<br>
+              アイヌ語で、「魚の住まない川」という意味を持ちます。
+              なので、
+              「川を作った建設者がやりきれない思いを抱えていて…」
+              的なエピソードは何もなく(^_^;)
+              トリビアの泉をはじめ、
+              多くのバラエティ番組で扱われたことのある川です。
+            </div>
+            <p class="accordion-triger">
+              ⑤天空の城ラピュタの敵役として登場するムスカ大佐。さて、彼の年齢はいくつでしょう？
+            </p>
+            <div class="accordion-contents">
+              (答え)A.28歳<br>
+              若っ！
+              僕が初めてラピュタを見た時は幼少期だったので、
+              その時なら「28歳ってこんな感じなんだ」
+              って思ったかもしれませんけど、
+              大人になってから知るともう
+              若っ！としか言えないという(^_^;)
+            </div>
+            <p class="accordion-triger">
+              ⑥では、サザエさんの、マスオさんの会社仲間のアナゴさんの年齢は？
+            </p>
+            <div class="accordion-contents">
+              (答え)A.28歳<br>
+              お前もか！若っ！
+              あんなに課長クラスの匂いがプンプンするのに、
+              若干28の若者だなんて。
+              平成ではなく昭和の設定ではありますけど、
+              それにしたってあの貫禄は……ねえ。
+            </div>
+            <p class="accordion-triger">
+              ⑦続いては身長についてです。ドラゴンボールのべジータは何ｃｍでしょう？
+            </p>
+            <div class="accordion-contents">
+              (答え)B.164cm<br>
+              どうですか？思っていたより小さくないですか？
+              体がゴツイせいなのか、
+              戦闘中とか飛び回りすぎてて身長とかよく分からないせいなのか、
+              彼の背の高さを意識する機会がほとんど無いように思います。
+              ゆえにこれはちょっと意外。
+            </div>
+            <p class="accordion-triger">
+              ⑧巨人の星の星一徹がやる「ちゃぶ台返し」。彼はアニメの中で何回ちゃぶ台をひっくり返したでしょう？
+            </p>
+            <div class="accordion-contents">
+              (答え)A.1回<br>
+              あれって1回しかやってないんです。
+              あのシーンばかりがクローズアップされがちなので
+              もう何回もやっているような印象を受けてしまいますよね。
+            </div>
+            <p class="accordion-triger">
+              ⑨「ウォーリーを探せ」でお馴染みのウォーリー。彼の肩書きとされているのは、次のうちどれ？
+            </p>
+            <div class="accordion-contents">
+              (答え)C.脱獄した囚人<br>
+              作者の方が明言した訳ではないので
+              確かな証拠は無いのですが、
+              服装や時代背景、この本が作られてきっかけ等を考えると、
+              この説が最も有力だと言われています。
+              多くのちびっこ達を楽しませてくれている
+              ウォーリーが逃走中だったとは……
+              なんとも不思議な気持ちです(^_^;)
+            </div>
+            <p class="accordion-triger">
+              ⑩世界で最も歌われている曲は次のうちどれ？
+            </p>
+            <div class="accordion-contents">
+              (答え)A. ハッピーバースデートゥーユー<br>
+              その他の3曲もものすごい回数歌われてきたでしょうけど、
+              誕生日のこの歌はほとんどの人が歌っていますよね。
+              「一番有名な曲」かどうかは分かりませんが、
+              「一番歌われている曲」という意味では
+              個人的には完全に納得です。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/quis.js"></script>
+    <script src="js/list.js"></script>
+    <script src="js/tab.js"></script>
+  </body>
+</html>
